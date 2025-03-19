@@ -1,0 +1,1195 @@
+export default {
+  translation: {
+    common: {
+      delete: '삭제',
+      deleteModalTitle: '이 항목을 삭제하시겠습니까?',
+      ok: '예',
+      cancel: '아니오',
+      total: '합계',
+      rename: '이름 변경',
+      name: '이름',
+      save: '저장',
+      namePlaceholder: '이름을 입력하세요',
+      next: '다음',
+      create: '생성',
+      edit: '수정',
+      upload: '업로드',
+      english: '영어',
+      portugueseBr: '포르투갈어 (브라질)',
+      chinese: '중국어(간체)',
+      traditionalChinese: '중국어(번체)',
+      language: '언어',
+      languageMessage: '언어를 입력하세요!',
+      languagePlaceholder: '언어를 선택하세요',
+      copy: '복사',
+      copied: '복사됨',
+      comingSoon: '곧 출시',
+      download: '다운로드',
+      close: '닫기',
+      preview: '미리보기',
+      move: '이동',
+      warn: '경고',
+      action: '작업',
+      s: 'S',
+      pleaseSelect: '선택하세요',
+      pleaseInput: '입력하세요',
+      submit: '제출',
+      embedIntoSite: '웹페이지에 삽입',
+      previousPage: '이전',
+      nextPage: '다음',
+    },
+    login: {
+      login: '로그인',
+      signUp: '회원가입',
+      loginDescription: '다시 만나게 되어 기쁩니다!',
+      registerDescription: '가입해 주셔서 감사합니다!',
+      emailLabel: '이메일',
+      emailPlaceholder: '이메일을 입력하세요',
+      passwordLabel: '비밀번호',
+      passwordPlaceholder: '비밀번호를 입력하세요',
+      rememberMe: '로그인 상태 유지',
+      signInTip: '계정이 없으신가요?',
+      signUpTip: '이미 계정이 있으신가요?',
+      nicknameLabel: '닉네임',
+      nicknamePlaceholder: '닉네임을 입력하세요',
+      register: '계정 생성',
+      continue: '계속',
+      title: '스마트 어시스턴트를 구축하기 시작하세요.',
+      description:
+        '최고의 RAG 기술을 무료로 체험해 보세요. 지식 베이스와 AI를 만들어 비즈니스를 강화하세요.',
+      review: '500+ 리뷰 기준',
+    },
+    header: {
+      knowledgeBase: '지식 베이스',
+      chat: '채팅',
+      register: '등록',
+      signin: '로그인',
+      home: '홈',
+      setting: '사용자 설정',
+      logout: '로그아웃',
+      fileManager: '파일 관리',
+      flow: '에이전트',
+      search: '검색',
+    },
+    knowledgeList: {
+      welcome: '다시 오신 것을 환영합니다',
+      description: '오늘 어떤 지식 베이스를 사용하시겠습니까?',
+      createKnowledgeBase: '지식 베이스 생성',
+      name: '이름',
+      namePlaceholder: '이름을 입력하세요!',
+      doc: '문서',
+      searchKnowledgePlaceholder: '검색',
+      noMoreData: '이것으로 끝입니다. 더 이상 없습니다.',
+    },
+    knowledgeDetails: {
+      dataset: '데이터셋',
+      testing: '검색 테스트',
+      files: '파일들',
+      configuration: '설정',
+      knowledgeGraph: '지식 그래프',
+      name: '이름',
+      namePlaceholder: '이름을 입력하세요!',
+      doc: '문서',
+      datasetDescription:
+        '😉 AI 기반 채팅을 시작하기 전에 파일 파싱이 완료될 때까지 기다려 주세요.',
+      addFile: '파일 추가',
+      searchFiles: '파일 검색',
+      localFiles: '로컬 파일',
+      emptyFiles: '빈 파일 생성',
+      webCrawl: '웹 크롤링',
+      chunkNumber: '청크 번호',
+      uploadDate: '업로드 날짜',
+      chunkMethod: '청크 방법',
+      enabled: '사용',
+      disabled: '사용 안 함',
+      action: '작업',
+      parsingStatus: '파싱 상태',
+      processBeginAt: '시작 시간',
+      processDuration: '소요 시간',
+      progressMsg: '진행 상황',
+      testingDescription:
+        'RAGFlow가 LLM을 위해 의도된 콘텐츠를 복구할 수 있는지 확인하기 위해 검색 테스트를 수행하세요. 최적의 결과를 얻기 위해 키워드 유사도 가중치나 유사도 임계값과 같은 기본 설정을 조정한 경우, 이러한 변경 사항은 자동으로 저장되지 않으므로 채팅 어시스턴트 설정이나 **검색** 에이전트 구성 요소 설정에 적용해야 합니다.',
+      similarityThreshold: '유사도 임계값',
+      similarityThresholdTip:
+        'RAGFlow는 검색 시 가중치가 부여된 키워드 유사도와 벡터 코사인 유사도의 조합 또는 가중치가 부여된 키워드 유사도와 재정렬 점수의 조합을 사용합니다. 이 매개변수는 사용자 쿼리와 청크 간의 유사도 임계값을 설정하며, 이 임계값 이하의 유사도 점수를 가진 청크는 결과에서 제외됩니다.',
+      vectorSimilarityWeight: '키워드 유사도 가중치',
+      vectorSimilarityWeightTip:
+        '벡터 코사인 유사도 또는 재정렬 점수와 함께 사용되는 결합 유사도 점수에서 키워드 유사도의 가중치를 설정합니다. 두 가중치의 합은 1.0이어야 합니다.',
+      testText: '테스트 텍스트',
+      testTextPlaceholder: '여기에 질문을 입력하세요!',
+      testingLabel: '테스트',
+      similarity: '혼합 유사도',
+      termSimilarity: '용어 유사도',
+      vectorSimilarity: '벡터 유사도',
+      hits: '적중',
+      view: '보기',
+      filesSelected: '선택된 파일들',
+      upload: '업로드',
+      run: '파싱',
+      runningStatus0: '대기 중',
+      runningStatus1: '파싱 중',
+      runningStatus2: '취소됨',
+      runningStatus3: '성공',
+      runningStatus4: '실패',
+      pageRanges: '페이지 범위',
+      pageRangesTip:
+        '파싱할 페이지 범위; 이 범위 밖의 페이지는 처리되지 않습니다.',
+      fromPlaceholder: '부터',
+      fromMessage: '시작 페이지 번호가 누락됨',
+      toPlaceholder: '까지',
+      toMessage: '끝 페이지 번호가 누락됨 (제외됨)',
+      layoutRecognize: 'PDF 파서',
+      layoutRecognizeTip:
+        '문서 제목, 텍스트 블록, 이미지 및 표를 효과적으로 찾기 위해 PDF 레이아웃 분석을 위한 비주얼 모델을 사용합니다. 단순 옵션이 선택되면 PDF의 일반 텍스트만 추출됩니다. 이 옵션은 현재 PDF 문서에만 적용됩니다.',
+      taskPageSize: '작업 페이지 크기',
+      taskPageSizeMessage: '작업 페이지 크기를 입력하세요!',
+      taskPageSizeTip:
+        '레이아웃 인식 과정에서 PDF 파일은 청크로 분할되어 병렬 처리되어 처리 속도를 높입니다. 이 매개변수는 각 청크의 크기를 설정하며, 청크 크기가 클수록 연속 텍스트가 페이지 사이에서 분할될 가능성이 줄어듭니다.',
+      addPage: '페이지 추가',
+      greaterThan: '현재 값은 "까지"보다 커야 합니다!',
+      greaterThanPrevious: '현재 값은 이전 "까지" 값보다 커야 합니다!',
+      selectFiles: '파일 선택',
+      changeSpecificCategory: '특정 카테고리 변경',
+      uploadTitle: '파일을 여기에 드래그 앤 드롭하여 업로드',
+      uploadDescription:
+        '단일 또는 일괄 파일 업로드를 지원합니다. 로컬에 배포된 RAGFlow의 경우, 업로드 당 총 파일 크기 제한은 1GB이며, 일괄 업로드 제한은 32개 파일입니다. 계정 당 파일 수에는 제한이 없습니다. demo.ragflow.io의 경우, 업로드 당 총 파일 크기 제한은 10MB이며, 각 파일은 10MB를 초과할 수 없고 계정 당 최대 128개 파일입니다.',
+      chunk: '청크',
+      bulk: '대량',
+      cancel: '취소',
+      rerankModel: '재정렬 모델',
+      rerankPlaceholder: '선택하세요',
+      rerankTip:
+        '빈칸으로 둘 경우, RAGFlow는 가중치가 부여된 키워드 유사도와 벡터 코사인 유사도의 조합을 사용합니다. 재정렬 모델이 선택되면 가중치가 부여된 재정렬 점수가 벡터 코사인 유사도를 대체합니다. 재정렬 모델을 사용하면 시스템 응답 시간이 크게 증가할 수 있습니다.',
+      topK: 'Top-K',
+      topKTip: 'K개의 청크가 재정렬 모델로 전송됩니다.',
+      delimiter: '텍스트 구분자',
+      delimiterTip:
+        '구분자 또는 구분 기호는 하나 이상의 특수 문자로 구성될 수 있습니다. 여러 문자인 경우, 백틱(``)으로 묶어야 합니다. 예를 들어, 구분자를 이렇게 구성하면: \n`##`; 줄 바꿈, 이중 해시 기호(##) 또는 세미콜론에서 텍스트가 분리됩니다.',
+      html4excel: 'Excel을 HTML로 변환',
+      html4excelTip:
+        '활성화되면, 스프레드시트가 HTML 테이블로 파싱되며 한 테이블당 최대 256행으로 제한됩니다. 그렇지 않으면 행별로 키-값 쌍으로 파싱됩니다.',
+      autoKeywords: '자동 키워드',
+      autoKeywordsTip:
+        "각 청크에서 N개의 키워드를 자동으로 추출하여 해당 키워드를 포함한 쿼리의 순위를 높입니다. 청크 목록에서 추가된 키워드를 확인하거나 업데이트할 수 있습니다. '시스템 모델 설정'에 지정된 LLM이 추가 토큰을 소비할 수 있음을 유의하세요.",
+      autoQuestions: '자동 질문',
+      autoQuestionsTip:
+        "각 청크에서 N개의 질문을 자동으로 추출하여 해당 질문을 포함한 쿼리의 순위를 높입니다. 청크 목록에서 추가된 질문을 확인하거나 업데이트할 수 있습니다. 오류가 발생해도 청크 생성 과정에는 영향을 주지 않지만, 원래 청크에 빈 결과가 추가될 수 있습니다. '시스템 모델 설정'에 지정된 LLM이 추가 토큰을 소비할 수 있음을 유의하세요.",
+      redo: '{{chunkNum}}개의 기존 청크를 삭제하시겠습니까?',
+      setMetaData: '메타 데이터 설정',
+      pleaseInputJson: 'JSON을 입력하세요',
+      documentMetaTips: `<p>메타 데이터는 Json 형식입니다(검색 불가). 이 문서의 청크가 프롬프트에 포함될 경우, LLM의 프롬프트에 추가됩니다.</p>
+<p>예시:</p>
+<b>메타 데이터:</b><br>
+<code>
+  {
+      "Author": "Alex Dowson",
+      "Date": "2024-11-12"
+  }
+</code><br>
+<b>프롬프트 예시:</b><br>
+<p>문서: the_name_of_document</p>
+<p>저자: Alex Dowson</p>
+<p>날짜: 2024-11-12</p>
+<p>관련 내용:</p>
+<ul>
+<li>  여기에 청크 내용이 있습니다....</li>
+<li>  여기에 청크 내용이 있습니다....</li>
+</ul>
+`,
+      metaData: '메타 데이터',
+      deleteDocumentConfirmContent:
+        '문서가 지식 그래프와 연결되어 있습니다. 삭제 후 관련 노드 및 관계 정보는 삭제되지만, 그래프는 즉시 업데이트되지 않습니다. 그래프 업데이트 작업은 지식 그래프 추출 작업이 포함된 새 문서 파싱 과정에서 수행됩니다.',
+      plainText: '단순',
+      reRankModelWaring: '재정렬 모델은 시간이 많이 소요됩니다.',
+    },
+    knowledgeConfiguration: {
+      titleDescription:
+        '여기서 지식 베이스 구성을 업데이트하세요, 특히 청크 방법을 설정하세요.',
+      name: '지식 베이스 이름',
+      photo: '지식 베이스 사진',
+      description: '설명',
+      language: '문서 언어',
+      languageMessage: '언어를 입력하세요!',
+      languagePlaceholder: '언어를 입력하세요!',
+      permissions: '권한',
+      embeddingModel: '임베딩 모델',
+      chunkTokenNumber: '텍스트용 청크 토큰 수',
+      chunkTokenNumberMessage: '텍스트용 청크 토큰 수가 필요합니다',
+      embeddingModelTip:
+        '청크를 임베딩으로 변환하는 모델입니다. 지식 베이스에 청크가 생성되면 변경할 수 없습니다. 다른 임베딩 모델로 전환하려면 지식 베이스의 기존 청크를 모두 삭제해야 합니다.',
+      permissionsTip:
+        '‘Team’으로 설정하면 모든 팀원이 지식 베이스를 관리할 수 있습니다.',
+      chunkTokenNumberTip:
+        '청크의 토큰 임계값을 설정합니다. 이 임계값보다 토큰 수가 적은 단락은 토큰 수가 임계값을 초과할 때까지 다음 단락과 결합되어 하나의 청크가 생성됩니다.',
+      chunkMethod: '청크 방법',
+      chunkMethodTip: '오른쪽의 팁을 확인하세요.',
+      upload: '업로드',
+      english: '영어',
+      chinese: '중국어',
+      portugueseBr: '포르투갈어 (브라질)',
+      embeddingModelPlaceholder: '임베딩 모델을 선택하세요.',
+      chunkMethodPlaceholder: '청크 방법을 선택하세요.',
+      save: '저장',
+      me: '나만',
+      team: '팀',
+      cancel: '취소',
+      methodTitle: '청크 방법 설명',
+      methodExamples: '예시',
+      methodExamplesDescription: '이해를 돕기 위해 다음 스크린샷을 제공합니다.',
+      dialogueExamplesTitle: '보기',
+      methodEmpty: '지식 베이스 카테고리에 대한 시각적 설명을 표시합니다',
+      book: `<p>지원되는 파일 형식: <b>DOCX</b>, <b>PDF</b>, <b>TXT</b>.</p><p>
+각 PDF 책의 경우, 불필요한 정보를 제거하고 분석 시간을 줄이기 위해 <i>페이지 범위</i>를 설정하세요.</p>`,
+      laws: `<p>지원되는 파일 형식: <b>DOCX</b>, <b>PDF</b>, <b>TXT</b>.</p><p>
+법률 문서는 일반적으로 엄격한 작성 형식을 따릅니다. 우리는 분할 지점을 식별하기 위해 텍스트 기능을 사용합니다.
+</p><p>
+청크는 'ARTICLE'과 일치하는 세분성을 가지며, 상위 텍스트가 모두 포함되도록 합니다.
+</p>`,
+      manual: `<p><b>PDF</b>만 지원됩니다.</p><p>
+매뉴얼은 계층적인 섹션 구조를 가진다고 가정하며, 가장 하위 섹션 제목을 문서 청크의 기본 단위로 사용합니다. 따라서 같은 섹션의 그림과 표는 분리되지 않아 청크 크기가 커질 수 있습니다.
+</p>`,
+      naive: `<p>지원되는 파일 형식: <b>DOCX, EXCEL, PPT, IMAGE, PDF, TXT, MD, JSON, EML, HTML</b>.</p>
+<p>이 방법은 '단순' 방법을 사용하여 파일을 청크로 분할합니다:</p>
+<p>
+<li>비전 감지 모델을 사용하여 텍스트를 더 작은 세그먼트로 분할합니다.</li>
+<li>'텍스트용 청크 토큰 수'로 지정된 임계값을 초과할 때까지 인접한 세그먼트를 결합하여 청크를 생성합니다.</li>
+</p>`,
+      paper: `<p><b>PDF</b> 파일만 지원됩니다.</p><p>
+논문은 <i>초록, 1.1, 1.2</i>와 같은 섹션별로 분할됩니다.</p><p>
+이 접근 방식은 LLM이 논문을 보다 효과적으로 요약하고 더 포괄적이며 이해하기 쉬운 응답을 제공할 수 있도록 합니다.
+그러나 이는 AI 대화의 컨텍스트를 증가시키고 LLM의 계산 비용을 높입니다. 따라서 대화 중에는 ‘<b>topN</b>’ 값을 줄이는 것을 고려하세요.
+</p>`,
+      presentation: `<p>지원되는 파일 형식: <b>PDF</b>, <b>PPTX</b>.</p><p>
+슬라이드의 각 페이지는 청크로 처리되며, 썸네일 이미지가 저장됩니다.</p><p>
+<i>이 청크 방법은 모든 업로드된 PPT 파일에 자동으로 적용되므로 수동으로 지정할 필요가 없습니다.</i></p>`,
+      qa: `
+      <p>
+이 청크 방법은 <b>XLSX</b> 및 <b>CSV/TXT</b> 파일 형식을 지원합니다.
+</p>
+<li>
+<b>XLSX</b> 형식의 파일은 헤더 없이 질문과 답변에 해당하는 두 개의 열을 포함해야 하며, 질문 열이 답변 열보다 먼저 나와야 합니다. 여러 시트도 허용되며, 열 구조가 올바르게 구성되어 있으면 됩니다.
+</li>
+<li>
+<b>CSV/TXT</b> 형식의 파일은 질문과 답변을 구분하기 위해 탭(TAB)을 구분자로 하여 UTF-8 인코딩되어야 합니다.
+</li>
+<p>
+<i>
+위 규칙을 따르지 않는 텍스트 줄은 무시되며, 각 Q&A 쌍은 개별 청크로 간주됩니다.
+</i>
+</p>
+      `,
+      resume: `<p>지원되는 파일 형식: <b>DOCX</b>, <b>PDF</b>, <b>TXT</b>.</p><p>
+다양한 형식의 이력서는 채용 담당자가 후보자를 검색할 수 있도록 구조화된 데이터로 파싱 및 정리됩니다.
+</p>
+      `,
+      table: `<p>지원되는 파일 형식: <b>XLSX</b> 및 <b>CSV/TXT</b>.</p><p>
+다음은 몇 가지 전제 조건 및 팁입니다:
+<ul>
+<li>CSV 또는 TXT 파일의 경우, 열 사이의 구분자는 <em><b>TAB</b></em>이어야 합니다.</li>
+<li>첫 번째 행은 열 제목이어야 합니다.</li>
+<li>열 제목은 LLM의 이해를 돕기 위해 의미 있는 용어여야 합니다.
+동의어를 슬래시 <i>'/'</i>로 구분하여 나란히 표기하고, 값은 괄호를 사용하여 열거하는 것이 좋습니다. 예: <i>'Gender/Sex (male, female)'</i>.<p>
+다음은 열 제목의 예시입니다:<ol>
+<li>supplier/vendor<b>'TAB'</b>Color (Yellow, Blue, Brown)<b>'TAB'</b>Sex/Gender (male, female)<b>'TAB'</b>size (M, L, XL, XXL)</li>
+</ol>
+</p>
+</li>
+<li>테이블의 각 행은 개별 청크로 처리됩니다.</li>
+</ul>`,
+      picture: `
+    <p>이미지 파일이 지원되며, 곧 비디오 지원도 추가될 예정입니다.</p><p>
+이 방법은 이미지에서 텍스트를 추출하기 위해 OCR 모델을 사용합니다.
+</p><p>
+OCR 모델로 추출된 텍스트가 불충분하다고 판단되면, 지정된 비주얼 LLM이 이미지를 설명하는 데 사용됩니다.
+</p>`,
+      one: `
+    <p>지원되는 파일 형식: <b>DOCX, EXCEL, PDF, TXT</b>.</p><p>
+이 방법은 각 문서를 전체적으로 하나의 청크로 취급합니다.
+</p><p>
+LLM이 전체 문서를 요약해야 할 때(해당 컨텍스트 길이를 처리할 수 있는 경우)에 적용됩니다.
+</p>`,
+      knowledgeGraph: `<p>지원되는 파일 형식: <b>DOCX, EXCEL, PPT, IMAGE, PDF, TXT, MD, JSON, EML</b></p>
+<p>이 접근 방식은 '단순'/'일반' 방법을 사용하여 파일을 청크로 분할합니다. 문서를 세그먼트로 분할한 후, '텍스트용 청크 토큰 수'로 지정된 임계값을 초과할 때까지 인접 세그먼트를 결합하여 청크를 생성합니다.</p>
+<p>생성된 청크는 LLM에 공급되어 지식 그래프와 마인드 맵을 위한 엔티티 및 관계를 추출합니다.</p>
+<p><b>엔티티 유형</b>을 설정했는지 확인하세요.</p>`,
+      tag: `<p>'Tag'를 청크 방법으로 사용하는 지식 베이스는 다른 지식 베이스가 청크에 태그를 추가하는 데 사용되며, 이 태그를 포함한 쿼리도 해당됩니다.</p>
+<p>'Tag'를 청크 방법으로 사용하는 지식 베이스는 <b>포함되지 않습니다</b> (RAG 절차에 관여하지 않습니다).</p>
+<p>이 지식 베이스의 청크는 태그의 예시로, 전체 태그 집합과 청크와 태그 간의 관련성을 보여줍니다.</p>
+<p>이 청크 방법은 <b>XLSX</b> 및 <b>CSV/TXT</b> 파일 형식을 지원합니다.</p>
+<p><b>XLSX</b> 형식의 파일은 헤더 없이 내용과 태그에 해당하는 두 개의 열을 포함해야 하며, 내용 열이 태그 열보다 먼저 나와야 합니다. 여러 시트도 허용되며, 열 구조가 올바르게 구성되어 있으면 됩니다.</p>
+<p><b>CSV/TXT</b> 형식의 파일은 내용과 태그를 구분하기 위해 탭(TAB)을 구분자로 하여 UTF-8 인코딩되어야 합니다.</p>
+<p>태그 열에서는 태그 사이에 영어 쉼표(,)가 사용됩니다.</p>
+<i>위 규칙을 따르지 않는 텍스트 줄은 무시되며, 각 쌍은 개별 청크로 간주됩니다.</i>
+`,
+      useRaptor: 'RAPTOR를 사용하여 검색을 강화',
+      useRaptorTip:
+        '트리 구조화 검색을 위한 재귀적 추상화 처리, 자세한 내용은 https://huggingface.co/papers/2401.18059 를 참조하세요.',
+      prompt: '프롬프트',
+      promptTip: '요약에 사용되는 LLM 프롬프트.',
+      promptMessage: '프롬프트가 필요합니다',
+      promptText: `다음 단락들을 요약해 주세요. 숫자는 주의해서 처리하고, 임의로 생성하지 마세요. 아래는 요약해야 할 내용입니다:
+      {cluster_content}
+위 내용이 요약 대상입니다.`,
+      maxToken: '최대 토큰',
+      maxTokenTip: '요약을 위한 최대 토큰 수.',
+      maxTokenMessage: '최대 토큰 수가 필요합니다',
+      threshold: '임계값',
+      thresholdTip: '임계값이 클수록 클러스터 수가 줄어듭니다.',
+      thresholdMessage: '임계값이 필요합니다',
+      maxCluster: '최대 클러스터',
+      maxClusterTip: '최대 클러스터 수.',
+      maxClusterMessage: '최대 클러스터 수가 필요합니다',
+      randomSeed: '랜덤 시드',
+      randomSeedMessage: '랜덤 시드가 필요합니다',
+      entityTypes: '엔티티 유형',
+      vietnamese: '베트남어',
+      pageRank: '페이지 랭크',
+      pageRankTip:
+        '이 값은 지식 베이스의 관련성 점수를 증가시킵니다. 이 값은 이 지식 베이스에서 검색된 모든 청크의 관련성 점수에 추가됩니다. 여러 지식 베이스 내에서 검색할 때 특정 베이스에 더 높은 페이지 랭크 점수를 부여하고자 할 때 유용합니다.',
+      tagName: '태그',
+      frequency: '빈도',
+      searchTags: '태그 검색',
+      tagCloud: '클라우드',
+      tagTable: '테이블',
+      tagSet: '태그 세트',
+      tagSetTip: `
+     <p>지식 베이스의 청크에 자동 태그를 추가하기 위해 하나 이상의 태그 지식 베이스를 선택하세요.</p>
+<p>사용자 쿼리에도 자동 태그가 적용됩니다.</p>
+이 자동 태그 기능은 기존 데이터셋에 도메인별 지식을 추가하여 검색을 강화합니다.
+<p>자동 태그와 자동 키워드의 차이:</p>
+<ul>
+  <li>태그 지식 베이스는 사용자가 정의한 제한된 집합인 반면, LLM이 추출한 키워드는 개방된 집합으로 볼 수 있습니다.</li>
+  <li>자동 태그 기능을 실행하기 전에 지정된 형식으로 태그 세트를 업로드해야 합니다.</li>
+  <li>자동 키워드 기능은 LLM에 의존하며 상당한 수의 토큰을 소모합니다.</li>
+</ul>
+      `,
+      topnTags: '상위-N 태그',
+      tags: '태그',
+      addTag: '태그 추가',
+      useGraphRag: '지식 그래프 추출',
+      useGraphRagTip:
+        '추출된 파일 청크를 기반으로 지식 그래프를 구성하여 다중 단계 질문 응답을 강화합니다.',
+      graphRagMethod: '방법',
+      graphRagMethodTip:
+        'Light: (기본) github.com/HKUDS/LightRAG에서 제공하는 프롬프트를 사용하여 엔티티와 관계를 추출합니다. 이 옵션은 적은 토큰, 메모리, 계산 자원을 소비합니다.</br>\n        General: github.com/microsoft/graphrag에서 제공하는 프롬프트를 사용하여 엔티티와 관계를 추출합니다',
+      resolution: '엔티티 해소',
+      resolutionTip:
+        "엔티티 중복 제거 기능입니다. 활성화되면, LLM은 유사한 엔티티(예: '2025'와 '2025년', 또는 'IT'와 '정보 기술')를 결합하여 보다 정확한 그래프를 구성합니다.",
+      community: '커뮤니티 보고서 생성',
+      communityTip:
+        '지식 그래프에서 커뮤니티는 관계로 연결된 엔티티의 클러스터입니다. 각 커뮤니티에 대해 LLM이 초록(커뮤니티 보고서)을 생성할 수 있습니다. 자세한 내용은 https://www.microsoft.com/en-us/research/blog/graphrag-improving-global-search-via-dynamic-community-selection/ 를 참조하세요.',
+    },
+    chunk: {
+      chunk: '청크',
+      bulk: '대량',
+      selectAll: '전체 선택',
+      enabledSelected: '선택된 항목 사용',
+      disabledSelected: '선택된 항목 사용 안 함',
+      deleteSelected: '선택된 항목 삭제',
+      search: '검색',
+      all: '전체',
+      enabled: '사용됨',
+      disabled: '사용 안 함',
+      keyword: '키워드',
+      function: '기능',
+      chunkMessage: '값을 입력하세요!',
+      full: '전체 텍스트',
+      ellipse: '말 줄임',
+      graph: '지식 그래프',
+      mind: '마인드 맵',
+      question: '질문',
+      questionTip:
+        '질문이 제공되면, 청크의 임베딩은 해당 질문을 기반으로 합니다.',
+    },
+    chat: {
+      newConversation: '새 대화',
+      createAssistant: '어시스턴트 생성',
+      assistantSetting: '어시스턴트 설정',
+      promptEngine: '프롬프트 엔진',
+      modelSetting: '모델 설정',
+      chat: '채팅',
+      newChat: '새 채팅',
+      send: '전송',
+      sendPlaceholder: '어시스턴트에게 메시지를 보내세요...',
+      chatConfiguration: '채팅 구성',
+      chatConfigurationDescription:
+        '선택한 지식 베이스에 맞춘 채팅 어시스턴트를 설정하세요! 💕',
+      assistantName: '어시스턴트 이름',
+      assistantNameMessage: '어시스턴트 이름이 필요합니다',
+      namePlaceholder: '예: Resume Jarvis',
+      assistantAvatar: '어시스턴트 아바타',
+      language: '언어',
+      emptyResponse: '빈 응답',
+      emptyResponseTip:
+        '쿼리에 대해 지식 베이스에서 결과가 검색되지 않을 경우 이 응답을 사용하거나, 빈칸으로 두어 LLM이 즉흥적으로 응답하도록 할 수 있습니다.',
+      emptyResponseMessage:
+        "지식 베이스에서 관련 결과가 검색되지 않으면 빈 응답이 발생합니다. 지식 베이스가 선택되지 않은 경우 '빈 응답' 필드를 지워야 합니다.",
+      setAnOpener: '오프닝 인사',
+      setAnOpenerInitial:
+        '안녕하세요! 저는 당신의 어시스턴트입니다. 무엇을 도와드릴까요?',
+      setAnOpenerTip: '사용자를 위한 오프닝 인사를 설정하세요.',
+      knowledgeBases: '지식 베이스',
+      knowledgeBasesMessage: '선택하세요',
+      knowledgeBasesTip:
+        '이 채팅 어시스턴트와 연결할 지식 베이스를 선택하세요.',
+      system: '시스템 프롬프트',
+      systemInitialValue: `당신은 지능형 어시스턴트입니다. 질문에 답하기 위해 지식 베이스의 내용을 요약하세요. 지식 베이스의 데이터를 나열하고 상세하게 답변하세요. 모든 지식 베이스 내용이 질문과 관련이 없을 경우, 반드시 "찾으시는 답변이 지식 베이스에서 발견되지 않았습니다!"라는 문장을 포함해야 합니다. 답변 시 채팅 기록을 고려하세요.
+      지식 베이스:
+      {knowledge}
+      위 내용이 지식 베이스입니다.`,
+      systemMessage: '입력하세요!',
+      systemTip:
+        'LLM에 대한 프롬프트 또는 지침 (역할, 원하는 길이, 어조 및 언어 등을 포함하되 이에 국한되지 않음).',
+      topN: '상위 N',
+      topNTip:
+        '유사도 임계값을 초과하는 모든 청크가 LLM에 전송되는 것은 아닙니다. 검색된 청크 중 상위 N개를 선택합니다.',
+      variable: '변수',
+      variableTip:
+        "변수는 더욱 유연한 전략 수립에 도움이 되며, 특히 채팅 어시스턴트 관리 API를 사용할 때 유용합니다. 이 변수들은 LLM의 프롬프트의 일부로 '시스템 프롬프트'에서 사용됩니다. 변수 {knowledge}는 선택한 지식 베이스를 나타내는 예약된 특수 변수이며, 모든 변수는 중괄호 {}로 감싸야 합니다.",
+      add: '추가',
+      key: '키',
+      optional: '선택 사항',
+      operation: '작업',
+      model: '모델',
+      modelTip: '대형 언어 채팅 모델',
+      modelMessage: '선택하세요!',
+      freedom: '자유',
+      improvise: '즉흥',
+      precise: '정확',
+      balance: '균형',
+      freedomTip:
+        "모델의 자유도를 나타내는 'Temperature', 'Top P', 'Presence penalty', 'Frequency penalty' 설정의 단축키입니다. 이 매개변수에는 세 가지 옵션이 있습니다: '즉흥'을 선택하면 창의적인 응답을, '정확'(기본)을 선택하면 보수적인 응답을, '균형'은 두 옵션의 중간값을 생성합니다.",
+      temperature: '온도',
+      temperatureMessage: '온도가 필요합니다',
+      temperatureTip:
+        '이 매개변수는 모델 예측의 무작위성을 조절합니다. 온도가 낮으면 보수적인 응답을, 높으면 창의적이고 다양한 응답을 생성합니다.',
+      topP: 'Top P',
+      topPMessage: 'Top P가 필요합니다',
+      topPTip:
+        '일명 "누클리어스 샘플링"으로, 이 매개변수는 가장 가능성이 높은 단어들의 소집합을 선택하기 위한 임계값을 설정하여 덜 가능성 있는 단어들을 배제합니다.',
+      presencePenalty: '발현 페널티',
+      presencePenaltyMessage: '발현 페널티가 필요합니다',
+      presencePenaltyTip:
+        '대화에서 이미 등장한 단어에 페널티를 부여하여 모델이 동일한 정보를 반복하지 않도록 합니다.',
+      frequencyPenalty: '빈도 페널티',
+      frequencyPenaltyMessage: '빈도 페널티가 필요합니다',
+      frequencyPenaltyTip:
+        '발현 페널티와 유사하게, 모델이 같은 단어를 자주 반복하는 경향을 줄입니다.',
+      maxTokens: '최대 토큰',
+      maxTokensMessage: '최대 토큰 수가 필요합니다',
+      maxTokensTip:
+        '이 매개변수는 모델 출력의 최대 길이를 토큰 수(단어 또는 단어 조각)로 설정합니다. 기본값은 512입니다. 비활성화하면 최대 토큰 제한이 해제되어 모델이 응답 토큰 수를 결정할 수 있습니다.',
+      maxTokensInvalidMessage: '최대 토큰에 대해 유효한 숫자를 입력하세요.',
+      maxTokensMinMessage: '최대 토큰은 0보다 작을 수 없습니다.',
+      quote: '인용문 표시',
+      quoteTip: '참고용으로 원본 텍스트를 표시할지 여부',
+      selfRag: '셀프-RAG',
+      selfRagTip:
+        '자세한 내용은: https://huggingface.co/papers/2310.11511 을 참조하세요.',
+      overview: '채팅 ID',
+      pv: '메시지 수',
+      uv: '활성 사용자 수',
+      speed: '토큰 출력 속도',
+      tokens: '소모된 토큰 수',
+      round: '세션 상호작용 횟수',
+      thumbUp: '고객 만족도',
+      preview: '미리보기',
+      embedded: '임베디드',
+      serviceApiEndpoint: '서비스 API 엔드포인트',
+      apiKey: 'API 키',
+      apiReference: 'API 문서',
+      dateRange: '날짜 범위:',
+      backendServiceApi: 'API 서버',
+      createNewKey: '새 키 생성',
+      created: '생성됨',
+      action: '작업',
+      embedModalTitle: '웹페이지에 삽입',
+      comingSoon: '곧 출시',
+      fullScreenTitle: '전체 임베드',
+      fullScreenDescription:
+        '원하는 위치에 아래의 iframe을 웹사이트에 삽입하세요',
+      partialTitle: '부분 임베드',
+      extensionTitle: 'Chrome 확장 프로그램',
+      tokenError: '먼저 API 키를 생성하세요.',
+      betaError: '먼저 시스템 설정 페이지에서 RAGFlow API 키를 획득하세요.',
+      searching: '검색 중...',
+      parsing: '파싱 중',
+      uploading: '업로드 중',
+      uploadFailed: '업로드 실패',
+      regenerate: '재생성',
+      read: '내용 읽기',
+      tts: '텍스트 음성 변환',
+      ttsTip:
+        '텍스트를 오디오로 재생하기 전에 설정 페이지에서 TTS 모델을 선택했는지 확인하세요.',
+      relatedQuestion: '관련 질문',
+      answerTitle: 'R',
+      multiTurn: '다중 턴 최적화',
+      multiTurnTip:
+        '다중 라운드 대화의 컨텍스트를 사용하여 사용자 쿼리를 최적화합니다. 활성화되면 추가 LLM 토큰을 소모합니다.',
+      howUseId: '채팅 ID 사용 방법?',
+      description: '어시스턴트 설명',
+      descriptionPlaceholder: '예: 이력서를 위한 채팅 어시스턴트.',
+      useKnowledgeGraph: '지식 그래프 사용',
+      useKnowledgeGraphTip:
+        '관련 엔티티, 관계 및 커뮤니티 보고서의 설명을 검색하여 다중 단계 및 복잡한 질문의 추론을 강화합니다.',
+      keyword: '키워드 분석',
+      keywordTip:
+        'LLM을 적용하여 사용자의 질문을 분석하고, 관련성 계산 시 강조될 키워드를 추출합니다.',
+      languageTip:
+        '지정된 언어로 문장 재작성 기능을 제공하며, 선택되지 않은 경우 최신 질문을 기본으로 사용합니다.',
+      avatarHidden: '아바타 숨기기',
+      locale: '로케일',
+      selectLanguage: '언어 선택',
+      reasoning: '추론',
+      reasoningTip:
+        'Deepseek-R1/OpenAI o1과 같은 추론 과정을 촉발합니다. 에이전트 기반 검색 프로세스를 추론 워크플로에 통합하여, 불확실한 정보에 직면할 때 모델이 동적으로 외부 지식을 검색할 수 있도록 합니다.',
+      tavilyApiKeyTip:
+        '여기에 API 키가 올바르게 설정되면, Tavily 기반 웹 검색이 지식 베이스 검색을 보완하는 데 사용됩니다.',
+      tavilyApiKeyMessage: 'Tavily API 키를 입력하세요',
+      tavilyApiKeyHelp: '획득 방법은?',
+    },
+    setting: {
+      profile: '프로필',
+      profileDescription: '여기서 사진 및 개인 정보를 업데이트하세요.',
+      maxTokens: '최대 토큰',
+      maxTokensMessage: '최대 토큰 수가 필요합니다',
+      maxTokensTip:
+        '이 매개변수는 모델 출력의 최대 길이를 토큰 수(단어 또는 단어 조각)로 설정합니다. 기본값은 512입니다. 비활성화하면 최대 토큰 제한이 해제되어 모델이 응답 토큰 수를 결정할 수 있습니다.',
+      maxTokensInvalidMessage: '최대 토큰에 대해 유효한 숫자를 입력하세요.',
+      maxTokensMinMessage: '최대 토큰은 0보다 작을 수 없습니다.',
+      password: '비밀번호',
+      passwordDescription: '비밀번호 변경을 위해 현재 비밀번호를 입력하세요.',
+      model: '모델 제공자',
+      modelDescription: '여기서 모델 매개변수와 API 키를 설정하세요.',
+      team: '팀',
+      system: '시스템',
+      logout: '로그아웃',
+      api: 'API',
+      username: '사용자 이름',
+      usernameMessage: '사용자 이름을 입력하세요!',
+      photo: '프로필 사진',
+      photoDescription: '프로필에 표시됩니다.',
+      colorSchema: '색상 스키마',
+      colorSchemaMessage: '색상 스키마를 선택하세요!',
+      colorSchemaPlaceholder: '색상 스키마 선택',
+      bright: '밝음',
+      dark: '어둡게',
+      timezone: '시간대',
+      timezoneMessage: '시간대를 입력하세요!',
+      timezonePlaceholder: '시간대 선택',
+      email: '이메일 주소',
+      emailDescription: '등록 후 이메일은 변경할 수 없습니다.',
+      currentPassword: '현재 비밀번호',
+      currentPasswordMessage: '비밀번호를 입력하세요!',
+      newPassword: '새 비밀번호',
+      newPasswordMessage: '비밀번호를 입력하세요!',
+      newPasswordDescription: '새 비밀번호는 8자 이상이어야 합니다.',
+      confirmPassword: '새 비밀번호 확인',
+      confirmPasswordMessage: '비밀번호를 확인하세요!',
+      confirmPasswordNonMatchMessage: '입력한 새 비밀번호가 일치하지 않습니다!',
+      cancel: '취소',
+      addedModels: '추가된 모델',
+      modelsToBeAdded: '추가할 모델',
+      addTheModel: '모델 추가',
+      apiKey: 'API 키',
+      apiKeyMessage: 'API 키를 입력하세요 (로컬 배포 모델의 경우 무시하세요).',
+      apiKeyTip: 'API 키는 해당 LLM 공급자를 등록하여 얻을 수 있습니다.',
+      showMoreModels: '더 많은 모델 보기',
+      baseUrl: '기본 URL',
+      baseUrlTip:
+        'API 키가 OpenAI에서 제공된 경우 무시하세요. 다른 중개 제공자는 API 키와 함께 이 기본 URL을 제공합니다.',
+      modify: '수정',
+      systemModelSettings: '시스템 모델 설정',
+      chatModel: '채팅 모델',
+      chatModelTip:
+        '새로 생성된 모든 지식 베이스에서 사용할 기본 채팅 LLM입니다.',
+      embeddingModel: '임베딩 모델',
+      embeddingModelTip:
+        '새로 생성된 모든 지식 베이스에서 사용할 기본 임베딩 모델입니다.',
+      img2txtModel: 'Img2txt 모델',
+      img2txtModelTip:
+        '새로 생성된 모든 지식 베이스에서 사용할 기본 다중 모듈 모델입니다. 이미지나 비디오를 설명할 수 있습니다.',
+      sequence2txtModel: 'Speech2txt 모델',
+      sequence2txtModelTip:
+        '새로 생성된 모든 지식 베이스에서 사용할 기본 ASR 모델입니다. 이 모델을 사용하여 음성을 해당 텍스트로 변환합니다.',
+      rerankModel: '재정렬 모델',
+      rerankModelTip:
+        '사용자 질문으로 검색된 청크를 재정렬하기 위해 기본 재정렬 모델이 사용됩니다.',
+      ttsModel: 'TTS 모델',
+      ttsModelTip:
+        '요청 시 대화 중 음성을 생성하기 위해 기본 TTS 모델이 사용됩니다.',
+      workspace: '작업 공간',
+      upgrade: '업그레이드',
+      addLlmTitle: 'LLM 추가',
+      modelName: '모델 이름',
+      modelID: '모델 ID',
+      modelUid: '모델 UID',
+      modelNameMessage: '모델 이름을 입력하세요!',
+      modelType: '모델 유형',
+      modelTypeMessage: '모델 유형을 입력하세요!',
+      addLlmBaseUrl: '기본 URL',
+      baseUrlNameMessage: '기본 URL을 입력하세요!',
+      vision: '비전을 지원하나요?',
+      ollamaLink: '{{name}} 통합 방법',
+      FishAudioLink: 'FishAudio 사용 방법',
+      TencentCloudLink: 'TencentCloud ASR 사용 방법',
+      volcModelNameMessage: '모델 이름을 입력하세요!',
+      addEndpointID: '모델의 EndpointID',
+      endpointIDMessage: '모델의 EndpointID를 입력하세요',
+      addArkApiKey: 'VOLC ARK_API_KEY',
+      ArkApiKeyMessage: 'ARK_API_KEY를 입력하세요',
+      bedrockModelNameMessage: '모델 이름을 입력하세요!',
+      addBedrockEngineAK: 'ACCESS KEY',
+      bedrockAKMessage: 'ACCESS KEY를 입력하세요',
+      addBedrockSK: 'SECRET KEY',
+      bedrockSKMessage: 'SECRET KEY를 입력하세요',
+      bedrockRegion: 'AWS 리전',
+      bedrockRegionMessage: '선택하세요!',
+      'us-east-1': '미국 동부 (N. Virginia)',
+      'us-west-2': '미국 서부 (Oregon)',
+      'ap-southeast-1': '아시아 태평양 (Singapore)',
+      'ap-northeast-1': '아시아 태평양 (Tokyo)',
+      'eu-central-1': '유럽 (Frankfurt)',
+      'us-gov-west-1': 'AWS GovCloud (US-West)',
+      'ap-southeast-2': '아시아 태평양 (Sydney)',
+      addHunyuanSID: 'Hunyuan Secret ID',
+      HunyuanSIDMessage: 'Secret ID를 입력하세요',
+      addHunyuanSK: 'Hunyuan Secret Key',
+      HunyuanSKMessage: 'Secret Key를 입력하세요',
+      addTencentCloudSID: 'TencentCloud Secret ID',
+      TencentCloudSIDMessage: 'Secret ID를 입력하세요',
+      addTencentCloudSK: 'TencentCloud Secret Key',
+      TencentCloudSKMessage: 'Secret Key를 입력하세요',
+      SparkModelNameMessage: 'Spark 모델을 선택하세요',
+      addSparkAPIPassword: 'Spark APIPassword',
+      SparkAPIPasswordMessage: 'APIPassword를 입력하세요',
+      addSparkAPPID: 'Spark APP ID',
+      SparkAPPIDMessage: 'APP ID를 입력하세요',
+      addSparkAPISecret: 'Spark APISecret',
+      SparkAPISecretMessage: 'APISecret을 입력하세요',
+      addSparkAPIKey: 'Spark APIKey',
+      SparkAPIKeyMessage: 'APIKey를 입력하세요',
+      yiyanModelNameMessage: '모델 이름을 입력하세요',
+      addyiyanAK: 'yiyan API KEY',
+      yiyanAKMessage: 'API KEY를 입력하세요',
+      addyiyanSK: 'yiyan Secret KEY',
+      yiyanSKMessage: 'Secret KEY를 입력하세요',
+      FishAudioModelNameMessage: '음성 합성 모델의 이름을 지정하세요',
+      addFishAudioAK: 'Fish Audio API KEY',
+      addFishAudioAKMessage: 'API KEY를 입력하세요',
+      addFishAudioRefID: 'FishAudio Reference ID',
+      addFishAudioRefIDMessage:
+        'Reference ID를 입력하세요 (기본 모델 사용 시 공백으로 두세요).',
+      GoogleModelIDMessage: '모델 ID를 입력하세요!',
+      addGoogleProjectID: '프로젝트 ID',
+      GoogleProjectIDMessage: '프로젝트 ID를 입력하세요',
+      addGoogleServiceAccountKey:
+        '서비스 계정 키 (Application Default Credentials 사용 시 공백으로 두세요)',
+      GoogleServiceAccountKeyMessage:
+        'Google Cloud 서비스 계정 키를 base64 형식으로 입력하세요',
+      addGoogleRegion: 'Google Cloud 리전',
+      GoogleRegionMessage: 'Google Cloud 리전을 입력하세요',
+      modelProvidersWarn:
+        "먼저 <b>설정 > 모델 제공자</b>에서 임베딩 모델과 LLM을 모두 추가하세요. 그런 다음 '시스템 모델 설정'에서 설정하세요.",
+      apiVersion: 'API 버전',
+      apiVersionMessage: 'API 버전을 입력하세요',
+      add: '추가',
+      updateDate: '업데이트 날짜',
+      role: '역할',
+      invite: '초대',
+      agree: '수락',
+      refuse: '거절',
+      teamMembers: '팀 구성원',
+      joinedTeams: '가입한 팀',
+      sureDelete: '이 구성원을 제거하시겠습니까?',
+      quit: '탈퇴',
+      sureQuit: '가입한 팀에서 탈퇴하시겠습니까?',
+    },
+    message: {
+      registered: '등록되었습니다!',
+      logout: '로그아웃',
+      logged: '로그인됨!',
+      pleaseSelectChunk: '청크를 선택하세요!',
+      modified: '수정됨',
+      created: '생성됨',
+      deleted: '삭제됨',
+      renamed: '이름 변경됨',
+      operated: '작업됨',
+      updated: '업데이트됨',
+      uploaded: '업로드됨',
+      200: '서버가 요청한 데이터를 성공적으로 반환했습니다.',
+      201: '데이터가 성공적으로 생성 또는 수정되었습니다.',
+      202: '요청이 백그라운드에 대기열에 추가되었습니다 (비동기 작업).',
+      204: '데이터가 성공적으로 삭제되었습니다.',
+      400: '요청에 오류가 있어 서버가 데이터를 생성 또는 수정하지 못했습니다.',
+      401: '다시 로그인하세요.',
+      403: '사용자는 권한이 있으나 접근이 금지되었습니다.',
+      404: '존재하지 않는 레코드에 대한 요청이었으며, 서버가 작업을 수행하지 않았습니다.',
+      406: '요청한 형식을 사용할 수 없습니다.',
+      410: '요청한 자원이 영구적으로 삭제되어 다시 사용할 수 없습니다.',
+      413: '한 번에 업로드된 파일의 총 크기가 너무 큽니다.',
+      422: '객체 생성 시 유효성 검사 오류가 발생했습니다.',
+      500: '서버 오류가 발생했습니다. 서버를 확인하세요.',
+      502: '게이트웨이 오류.',
+      503: '서비스를 사용할 수 없으며, 서버가 일시적으로 과부하되었거나 유지 관리 중입니다.',
+      504: '게이트웨이 타임아웃.',
+      requestError: '요청 오류',
+      networkAnomalyDescription:
+        '네트워크에 이상이 있어 서버에 연결할 수 없습니다.',
+      networkAnomaly: '네트워크 이상',
+      hint: '힌트',
+    },
+    fileManager: {
+      name: '이름',
+      uploadDate: '업로드 날짜',
+      knowledgeBase: '지식 베이스',
+      size: '크기',
+      action: '작업',
+      addToKnowledge: '지식 베이스에 연결',
+      pleaseSelect: '선택하세요',
+      newFolder: '새 폴더',
+      file: '파일',
+      uploadFile: '파일 업로드',
+      parseOnCreation: '생성 시 파싱',
+      directory: '디렉터리',
+      uploadTitle: '파일을 이곳에 드래그 앤 드롭하여 업로드',
+      uploadDescription:
+        '단일 또는 일괄 파일 업로드를 지원합니다. 로컬에 배포된 RAGFlow의 경우, 업로드 당 총 파일 크기 제한은 1GB이며, 일괄 업로드 제한은 32개 파일입니다. 계정 당 파일 수에는 제한이 없습니다. demo.ragflow.io의 경우, 업로드 당 총 파일 크기 제한은 10MB이며, 각 파일은 10MB를 초과할 수 없고 계정 당 최대 128개 파일입니다.',
+      local: '로컬 업로드',
+      s3: 'S3 업로드',
+      preview: '미리보기',
+      fileError: '파일 오류',
+      uploadLimit:
+        '각 파일은 10MB를 초과할 수 없으며, 총 파일 수는 128개를 초과할 수 없습니다.',
+      destinationFolder: '대상 폴더',
+    },
+    flow: {
+      cite: '인용',
+      citeTip: 'citeTip',
+      name: '이름',
+      nameMessage: '이름을 입력하세요',
+      description: '설명',
+      examples: '예시',
+      to: '수신',
+      msg: '메시지',
+      messagePlaceholder: '메시지',
+      messageMsg: '메시지를 입력하거나 이 필드를 삭제하세요.',
+      addField: '옵션 추가',
+      addMessage: '메시지 추가',
+      loop: '반복',
+      loopTip:
+        '반복은 현재 구성 요소의 최대 반복 횟수입니다. 반복 횟수가 이 값을 초과하면 구성 요소가 현재 작업을 완료할 수 없음을 의미하므로, 에이전트를 재최적화하세요.',
+      yes: '예',
+      no: '아니오',
+      key: '키',
+      componentId: '구성 요소 ID',
+      add: '추가',
+      operation: '작업',
+      run: '실행',
+      save: '저장',
+      title: 'ID:',
+      beginDescription: '여기서 흐름이 시작됩니다.',
+      answerDescription:
+        '사람과 봇 간의 인터페이스 역할을 하며, 사용자 입력을 받고 에이전트의 응답을 표시하는 구성 요소입니다.',
+      retrievalDescription:
+        '지정된 지식 베이스(데이터셋)에서 정보를 검색하는 구성 요소입니다. 선택한 지식 베이스가 동일한 임베딩 모델을 사용하는지 확인하세요.',
+      generateDescription:
+        'LLM이 응답을 생성하도록 프롬프트하는 구성 요소입니다. 프롬프트가 올바르게 설정되었는지 확인하세요.',
+      categorizeDescription:
+        'LLM을 사용하여 사용자 입력을 미리 정의된 카테고리로 분류하는 구성 요소입니다. 각 카테고리에 대해 이름, 설명, 예시 및 해당 다음 구성 요소를 지정해야 합니다.',
+      relevantDescription:
+        '상위 출력이 사용자의 최신 쿼리와 관련이 있는지 평가하기 위해 LLM을 사용하는 구성 요소입니다. 각 판단 결과에 대해 다음 구성 요소를 지정하세요.',
+      rewriteQuestionDescription:
+        '이전 대화의 문맥을 기반으로 Interact 구성 요소의 사용자 쿼리를 재작성하는 구성 요소입니다.',
+      messageDescription:
+        "정적 메시지를 전송하는 구성 요소입니다. 여러 메시지가 제공되면 무작위로 하나를 선택하여 전송합니다. 하위 구성 요소가 'Interact' (인터페이스 구성 요소)인지 확인하세요.",
+      keywordDescription:
+        '사용자 입력으로부터 상위 N개의 검색 결과를 검색하는 구성 요소입니다. 사용 전에 TopN 값을 올바르게 설정했는지 확인하세요.',
+      baidu: 'Baidu',
+      baiduDescription:
+        'baidu.com에서 검색하는 구성 요소로, TopN을 사용하여 검색 결과 수를 지정합니다. 기존 지식 베이스를 보완합니다.',
+      duckDuckGo: 'DuckDuckGo',
+      duckDuckGoDescription:
+        'duckduckgo.com에서 검색하는 구성 요소로, TopN을 사용하여 검색 결과 수를 지정할 수 있습니다. 기존 지식 베이스를 보완합니다.',
+      channel: '채널',
+      channelTip:
+        '구성 요소 입력에 대해 텍스트 검색 또는 뉴스 검색을 수행합니다.',
+      text: '텍스트',
+      news: '뉴스',
+      messageHistoryWindowSize: '메시지 창 크기',
+      messageHistoryWindowSizeTip:
+        'LLM이 확인해야 하는 대화 기록의 창 크기입니다. 클수록 좋으나, LLM의 최대 콘텐츠 길이를 주의하세요.',
+      wikipedia: '위키피디아',
+      pubMed: 'PubMed',
+      pubMedDescription:
+        'https://pubmed.ncbi.nlm.nih.gov/에서 검색하는 구성 요소로, TopN을 사용하여 검색 결과 수를 지정할 수 있습니다. 기존 지식 베이스를 보완합니다.',
+      email: '이메일',
+      emailTip: '이메일은 필수 항목입니다. 이메일 주소를 입력하세요.',
+      arXiv: 'ArXiv',
+      arXivDescription:
+        'https://arxiv.org/에서 검색하는 구성 요소로, TopN을 사용하여 검색 결과 수를 지정할 수 있습니다. 기존 지식 베이스를 보완합니다.',
+      sortBy: '정렬 기준',
+      submittedDate: '제출 날짜',
+      lastUpdatedDate: '최종 업데이트 날짜',
+      relevance: '관련도',
+      google: 'Google',
+      googleDescription:
+        'https://www.google.com/에서 검색하는 구성 요소로, TopN을 사용하여 검색 결과 수를 지정할 수 있습니다. 기존 지식 베이스를 보완합니다. 이는 serpapi.com의 API 키가 필요함을 유의하세요.',
+      bing: 'Bing',
+      bingDescription:
+        'https://www.bing.com/에서 검색하는 구성 요소로, TopN을 사용하여 검색 결과 수를 지정할 수 있습니다. 기존 지식 베이스를 보완합니다. 이는 microsoft.com의 API 키가 필요함을 유의하세요.',
+      apiKey: 'API 키',
+      country: '국가 및 지역',
+      language: '언어',
+      googleScholar: 'Google Scholar',
+      googleScholarDescription:
+        'https://scholar.google.com/에서 검색하는 구성 요소로, Top N을 사용하여 검색 결과 수를 지정할 수 있습니다.',
+      yearLow: '최소 연도',
+      yearHigh: '최대 연도',
+      patents: '특허',
+      data: '데이터',
+      deepL: 'DeepL',
+      deepLDescription:
+        'https://www.deepl.com/에서 보다 전문화된 번역을 제공하는 구성 요소입니다.',
+      authKey: '인증 키',
+      sourceLang: '원본 언어',
+      targetLang: '대상 언어',
+      gitHub: 'GitHub',
+      gitHubDescription:
+        'https://github.com/에서 리포지토리를 검색하는 구성 요소로, Top N을 사용하여 검색 결과 수를 지정할 수 있습니다.',
+      baiduFanyi: 'BaiduFanyi',
+      baiduFanyiDescription:
+        'https://fanyi.baidu.com/에서 전문 번역을 제공하는 구성 요소입니다.',
+      appid: '앱 ID',
+      secretKey: '비밀 키',
+      domain: '도메인',
+      transType: '번역 유형',
+      baiduSecretKeyOptions: {
+        translate: '일반 번역',
+        fieldtranslate: '분야별 번역',
+      },
+      baiduDomainOptions: {
+        it: '정보기술',
+        finance: '금융 및 경제',
+        machinery: '기계 제조',
+        senimed: '생의학',
+        novel: '온라인 문학',
+        academic: '학술 논문',
+        aerospace: '항공우주',
+        wiki: '인문학 및 사회과학',
+        news: '뉴스 및 정보',
+        law: '법률 및 규정',
+        contract: '계약',
+      },
+      baiduSourceLangOptions: {
+        auto: '자동 감지',
+        zh: '중국어',
+        en: '영어',
+        yue: '광동어',
+        wyw: '고전 중국어',
+        jp: '일본어',
+        kor: '한국어',
+        fra: '프랑스어',
+        spa: '스페인어',
+        th: '태국어',
+        ara: '아랍어',
+        ru: '러시아어',
+        pt: '포르투갈어',
+        de: '독일어',
+        it: '이탈리아어',
+        el: '그리스어',
+        nl: '네덜란드어',
+        pl: '폴란드어',
+        bul: '불가리아어',
+        est: '에스토니아어',
+        dan: '덴마크어',
+        fin: '핀란드어',
+        cs: '체코어',
+        rom: '루마니아어',
+        slo: '슬로베니아어',
+        swe: '스웨덴어',
+        hu: '헝가리어',
+        cht: '중국어(번체)',
+        vie: '베트남어',
+      },
+      qWeather: 'QWeather',
+      qWeatherDescription:
+        'https://www.qweather.com/에서 온도 및 대기 질과 같은 날씨 정보를 가져오는 구성 요소입니다.',
+      lang: '언어',
+      type: '유형',
+      webApiKey: '웹 API 키',
+      userType: '사용자 유형',
+      timePeriod: '기간',
+      qWeatherLangOptions: {
+        zh: '중국어(간체)',
+        'zh-hant': '중국어(번체)',
+        en: '영어',
+        de: '독일어',
+        es: '스페인어',
+        fr: '프랑스어',
+        it: '이탈리아어',
+        ja: '일본어',
+        ko: '한국어',
+        ru: '러시아어',
+        hi: '힌디어',
+        th: '태국어',
+        ar: '아랍어',
+        pt: '포르투갈어',
+        bn: '벵골어',
+        ms: '말레이어',
+        nl: '네덜란드어',
+        el: '그리스어',
+        la: '라틴어',
+        sv: '스웨덴어',
+        id: '인도네시아어',
+        pl: '폴란드어',
+        tr: '터키어',
+        cs: '체코어',
+        et: '에스토니아어',
+        vi: '베트남어',
+        fil: '필리핀어',
+        fi: '핀란드어',
+        he: '히브리어',
+        is: '아이슬란드어',
+        nb: '노르웨이어',
+      },
+      qWeatherTypeOptions: {
+        weather: '일기 예보',
+        indices: '날씨 생활 지수',
+        airquality: '대기 질',
+      },
+      qWeatherUserTypeOptions: {
+        free: '무료 구독자',
+        paid: '유료 구독자',
+      },
+      qWeatherTimePeriodOptions: {
+        now: '현재',
+        '3d': '3일',
+        '7d': '7일',
+        '10d': '10일',
+        '15d': '12일',
+        '30d': '30일',
+      },
+      publish: 'API',
+      exeSQL: 'ExeSQL',
+      exeSQLDescription:
+        'MySQL, PostgreSQL 또는 MariaDB의 쿼리를 지원하는 관계형 데이터베이스에서 SQL 쿼리를 실행하는 구성 요소입니다.',
+      dbType: '데이터베이스 유형',
+      database: '데이터베이스',
+      username: '사용자 이름',
+      host: '호스트',
+      port: '포트',
+      password: '비밀번호',
+      switch: '스위치',
+      logicalOperator: '논리 연산자',
+      switchOperatorOptions: {
+        equal: '같음',
+        notEqual: '같지 않음',
+        gt: '보다 큼',
+        ge: '보다 크거나 같음',
+        lt: '보다 작음',
+        le: '보다 작거나 같음',
+        contains: '포함',
+        notContains: '포함하지 않음',
+        startWith: '시작',
+        endWith: '끝',
+        empty: '비어 있음',
+        notEmpty: '비어 있지 않음',
+      },
+      switchLogicOperatorOptions: {
+        and: 'AND',
+        or: 'OR',
+      },
+      operator: '연산자',
+      value: '값',
+      useTemplate: '이 템플릿 사용',
+      wenCai: 'WenCai',
+      queryType: '쿼리 유형',
+      wenCaiDescription:
+        '다양한 금융 웹사이트에서 주가 및 자금 뉴스 등 금융 정보를 얻는 구성 요소입니다.',
+      wenCaiQueryTypeOptions: {
+        stock: '주식',
+        zhishu: '지수',
+        fund: '펀드',
+        hkstock: '홍콩 주식',
+        usstock: '미국 주식 시장',
+        threeboard: '신규 장외시장',
+        conbond: '전환사채',
+        insurance: '보험',
+        futures: '선물',
+        lccp: '자금 조달',
+        foreign_exchange: '외화',
+      },
+      akShare: 'AkShare',
+      akShareDescription:
+        'https://www.eastmoney.com/에서 주식 뉴스를 얻는 구성 요소입니다.',
+      yahooFinance: 'YahooFinance',
+      yahooFinanceDescription:
+        '티커 심볼을 사용하여 상장 기업에 대한 정보를 조회하는 구성 요소입니다.',
+      crawler: '웹 크롤러',
+      crawlerDescription:
+        '지정된 URL에서 HTML 소스 코드를 크롤링하는 구성 요소입니다.',
+      proxy: '프록시',
+      crawlerResultOptions: {
+        html: 'HTML',
+        markdown: 'Markdown',
+        content: '내용',
+      },
+      extractType: '추출 유형',
+      info: '정보',
+      history: '기록',
+      financials: '재무',
+      balanceSheet: '대차대조표',
+      cashFlowStatement: '현금 흐름표',
+      jin10: 'Jin10',
+      jin10Description:
+        'Jin10 Open Platform에서 뉴스 업데이트, 일정, 시세 및 참고 자료를 포함한 금융 정보를 가져오는 구성 요소입니다.',
+      flashType: '플래시 유형',
+      filter: '필터',
+      contain: '포함',
+      calendarType: '캘린더 유형',
+      calendarDatashape: '캘린더 데이터 형태',
+      symbolsDatatype: '심볼 데이터 타입',
+      symbolsType: '심볼 유형',
+      jin10TypeOptions: {
+        flash: '빠른 뉴스',
+        calendar: '캘린더',
+        symbols: '시세',
+        news: '참고',
+      },
+      jin10FlashTypeOptions: {
+        '1': '시장 뉴스',
+        '2': '선물 뉴스',
+        '3': '미국-홍콩 뉴스',
+        '4': 'A주 뉴스',
+        '5': '상품 및 외환 뉴스',
+      },
+      jin10CalendarTypeOptions: {
+        cj: '거시경제 데이터 캘린더',
+        qh: '선물 캘린더',
+        hk: '홍콩 주식 시장 캘린더',
+        us: '미국 주식 시장 캘린더',
+      },
+      jin10CalendarDatashapeOptions: {
+        data: '데이터',
+        event: '이벤트',
+        holiday: '휴일',
+      },
+      jin10SymbolsTypeOptions: {
+        GOODS: '상품 시세',
+        FOREX: '외환 시세',
+        FUTURE: '국제 시장 시세',
+        CRYPTO: '암호화폐 시세',
+      },
+      jin10SymbolsDatatypeOptions: {
+        symbols: '상품 목록',
+        quotes: '최신 시장 시세',
+      },
+      concentrator: '집중기',
+      concentratorDescription:
+        '상위 구성 요소의 출력을 받아 하위 구성 요소에 입력으로 전달하는 구성 요소입니다.',
+      tuShare: 'TuShare',
+      tuShareDescription:
+        '주요 금융 웹사이트에서 금융 뉴스 요약을 얻어 산업 및 계량적 연구에 도움을 주는 구성 요소입니다.',
+      tuShareSrcOptions: {
+        sina: 'Sina',
+        wallstreetcn: 'wallstreetcn',
+        '10jqka': '스트레이트 플러시',
+        eastmoney: 'Eastmoney',
+        yuncaijing: 'YUNCAIJING',
+        fenghuang: 'FENGHUANG',
+        jinrongjie: 'JRJ',
+      },
+      token: '토큰',
+      src: '출처',
+      startDate: '시작 날짜',
+      endDate: '종료 날짜',
+      keyword: '키워드',
+      note: '메모',
+      noteDescription: '메모',
+      notePlaceholder: '메모를 입력하세요',
+      invoke: '호출',
+      invokeDescription:
+        '다른 구성 요소의 출력이나 상수를 입력으로 사용하여 원격 서비스를 호출할 수 있는 구성 요소입니다.',
+      url: 'URL',
+      method: '메서드',
+      timeout: '타임아웃',
+      headers: '헤더',
+      cleanHtml: 'HTML 정리',
+      cleanHtmlTip:
+        '응답이 HTML 형식이며 주요 콘텐츠만 필요할 경우, 이 옵션을 활성화하세요.',
+      reference: '참조',
+      input: '입력',
+      output: '출력',
+      parameter: '매개변수',
+      howUseId: '에이전트 ID 사용 방법?',
+      content: '내용',
+      operationResults: '작업 결과',
+      autosaved: '자동 저장됨',
+      optional: '선택 사항',
+      pasteFileLink: '파일 링크 붙여넣기',
+      testRun: '테스트 실행',
+      template: '템플릿',
+      templateDescription:
+        '다른 구성 요소의 출력을 포맷하는 구성 요소입니다. 1. Jinja2 템플릿을 지원하며, 입력을 객체로 변환한 후 템플릿을 렌더링합니다. 2. 동시에 {parameter} 문자열 치환 방식을 유지합니다.',
+      emailComponent: '이메일',
+      emailDescription: '지정된 주소로 이메일을 보냅니다.',
+      smtpServer: 'SMTP 서버',
+      smtpPort: 'SMTP 포트',
+      senderEmail: '발신자 이메일',
+      authCode: '인증 코드',
+      senderName: '발신자 이름',
+      toEmail: '수신자 이메일',
+      ccEmail: '참조 이메일',
+      emailSubject: '제목',
+      emailContent: '내용',
+      smtpServerRequired: 'SMTP 서버 주소를 입력하세요',
+      senderEmailRequired: '발신자 이메일을 입력하세요',
+      authCodeRequired: '인증 코드를 입력하세요',
+      toEmailRequired: '수신자 이메일을 입력하세요',
+      emailContentRequired: '이메일 내용을 입력하세요',
+      emailSentSuccess: '이메일 전송 성공',
+      emailSentFailed: '이메일 전송 실패',
+      dynamicParameters: '동적 매개변수',
+      jsonFormatTip:
+        '상위 구성 요소는 다음 형식의 JSON 문자열을 제공해야 합니다:',
+      toEmailTip: 'to_email: 수신자 이메일 (필수)',
+      ccEmailTip: 'cc_email: 참조 이메일 (선택 사항)',
+      subjectTip: 'subject: 이메일 제목 (선택 사항)',
+      contentTip: 'content: 이메일 내용 (선택 사항)',
+      jsonUploadTypeErrorMessage: 'JSON 파일을 업로드하세요',
+      jsonUploadContentErrorMessage: 'JSON 파일 오류',
+      iteration: '반복',
+      iterationDescription:
+        "이 구성 요소는 먼저 입력을 '구분자'로 배열로 분할합니다.\n배열의 각 요소에 대해 순차적으로 동일한 작업 단계를 수행하여 모든 결과가 출력될 때까지 처리합니다. 이는 작업 배치 프로세서로 이해할 수 있습니다.\n\n예를 들어, 긴 텍스트 번역 반복 노드에서 모든 내용을 LLM 노드로 입력하면 단일 대화 제한에 도달할 수 있습니다. 상위 노드는 긴 텍스트를 여러 조각으로 먼저 분할하고, 반복 노드와 협력하여 각 조각을 배치 번역함으로써 단일 대화의 LLM 메시지 제한에 도달하는 것을 피할 수 있습니다.",
+      delimiterTip:
+        '이 구분자는 입력 텍스트를 여러 텍스트 조각으로 분할하는 데 사용되며, 각 반복의 입력 항목으로 처리됩니다.',
+      delimiterOptions: {
+        comma: '쉼표',
+        lineBreak: '줄 바꿈',
+        tab: '탭',
+        underline: '언더라인',
+        diagonal: '슬래시',
+        minus: '대시',
+        semicolon: '세미콜론',
+      },
+      addVariable: '변수 추가',
+      variableSettings: '변수 설정',
+      globalVariables: '전역 변수',
+      systemPrompt: '시스템 프롬프트',
+      addCategory: '카테고리 추가',
+      categoryName: '카테고리 이름',
+      nextStep: '다음 단계',
+      datatype: 'HTTP 요청의 MIME 유형',
+      insertVariableTip: '변수를 입력/삽입하세요',
+    },
+    footer: {
+      profile: '© React. 모든 권리 보유',
+    },
+    layout: {
+      file: '파일',
+      knowledge: '지식',
+      chat: '채팅',
+    },
+  },
+};
